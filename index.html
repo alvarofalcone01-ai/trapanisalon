@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="es-AR" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trapani Salon | Peluquería y barbería en Rosario</title>
+<meta name="description" content="Trapani Salon, peluquería y barbería en Dorrego 307, Rosario. Color, French Balayage, cortes, rituales Kérastase y barbería. Reservá tu turno online.">
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:title" content="Trapani Salon · Peluquería y barbería en Rosario">
+<meta property="og:description" content="Color, corte, rituales Kérastase y barbería en Dorrego 307, Rosario.">
+<meta property="og:image" content="assets/img/hero.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23000'/%3E%3Cpath d='M50 6 88 28v44L50 94 12 72V28Z' fill='none' stroke='%23d0a86a' stroke-width='4'/%3E%3Cpath d='M33 29h34v15h-5v-7H55.5v28H60v5H40v-5h4.5V37H38v7h-5Z' fill='%23d0a86a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..500&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="preload" as="image" href="assets/img/hero.webp" fetchpriority="high">
+<link rel="stylesheet" href="styles.css?v=20261111">
+<script>
+/* Marca que hay JS y respaldo: si main.js no arranca, se vuelve a la versión sin animaciones */
+(function(d){
+  var h = d.documentElement;
+  h.classList.remove("no-js"); h.classList.add("js");
+  try { if (sessionStorage.getItem("tp-splash")) h.classList.add("no-splash"); } catch (e) {}
+  window.addEventListener("load", function(){
+    setTimeout(function(){ if (!window.__tpBooted) { h.classList.remove("js"); h.classList.add("no-js"); } }, 1500);
+  });
+})(document);
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Trapani Salon",
+  "description": "Peluquería y barbería en Rosario.",
+  "telephone": "+5493416151122",
+  "email": "Comercial.trapanisalon@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Dorrego 307",
+    "postalCode": "2000",
+    "addressLocality": "Rosario",
+    "addressRegion": "Santa Fe",
+    "addressCountry": "AR"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "10:00",
+    "closes": "19:00"
+  }],
+  "sameAs": ["https://instagram.com/trapanisalon","https://www.facebook.com/trapanisalon"]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#servicios">Ir a los servicios</a>
+
+<!-- Isotipo de Trapani: doble hexágono y T -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="mark" viewBox="0 0 100 100">
+    <path d="M50 4 89.84 27v46L50 96 10.16 73V27Z" fill="none" stroke="currentColor" style="stroke-width:var(--so,2)"/>
+    <path d="M50 9 85.51 29.5v41L50 91 14.49 70.5v-41Z" fill="none" stroke="currentColor" style="stroke-width:var(--si,1.2)"/>
+    <path d="M33 29h34v15h-5v-7H55.5v28H60v5H40v-5h4.5V37H38v7h-5Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5Z" fill="currentColor"/></symbol>
+</svg>
+
+<!-- Pantalla de entrada (se muestra una vez por visita) -->
+<div class="splash" data-splash aria-hidden="true">
+  <svg class="splash-mark" viewBox="0 0 100 100">
+    <path class="s-o" pathLength="1" d="M50 4 89.84 27v46L50 96 10.16 73V27Z"/>
+    <path class="s-i" pathLength="1" d="M50 9 85.51 29.5v41L50 91 14.49 70.5v-41Z"/>
+    <path class="s-t" d="M33 29h34v15h-5v-7H55.5v28H60v5H40v-5h4.5V37H38v7h-5Z"/>
+  </svg>
+  <p class="splash-word"><span>Trapani</span><span>Salon</span></p>
+</div>
+
+<div class="progress" aria-hidden="true"><span data-progress></span></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span class="cursor-dot"></span><span class="cursor-ring"><svg><use href="#play"/></svg></span></div>
+
+<header class="nav" data-nav>
+  <div class="nav-in">
+    <a class="brand" href="#inicio" aria-label="Trapani Salon, inicio">
+      <svg class="mark" aria-hidden="true"><use href="#mark"/></svg>
+      <span class="wm"><b>Trapani</b><small>Salon</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#trabajos">Trabajos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#rituales">Rituales</a>
+      <a href="#barberia">Barbería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="nav-login" href="https://web.bewe.co/trapani/login" target="_blank" rel="noopener">Iniciar sesión</a>
+    <a class="btn btn-gold btn-sm nav-cta" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener" data-magnetic>Reservar</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="mmenu" data-burger><span></span><span></span><span class="sr-only">Menú</span></button>
+  </div>
+</header>
+
+<div class="mmenu" id="mmenu" data-mmenu hidden>
+  <nav aria-label="Menú móvil">
+    <ol>
+      <li><a href="#trabajos"><i>01</i>Trabajos</a></li>
+      <li><a href="#servicios"><i>02</i>Servicios</a></li>
+      <li><a href="#rituales"><i>03</i>Rituales</a></li>
+      <li><a href="#barberia"><i>04</i>Barbería</a></li>
+      <li><a href="#contacto"><i>05</i>Contacto</a></li>
+    </ol>
+  </nav>
+  <div class="mmenu-foot">
+    <a class="btn btn-gold" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar turno</a>
+    <a class="btn btn-line" href="https://wa.me/5493416151122" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="mmenu-login" href="https://web.bewe.co/trapani/login" target="_blank" rel="noopener">Iniciar sesión</a>
+  </div>
+</div>
+
+<main>
+
+  <!-- ============ PORTADA ============ -->
+  <section class="hero" id="inicio" aria-label="Portada" data-hero>
+    <div class="hero-sticky">
+      <div class="hero-media" data-hero-media>
+        <video class="hero-video" data-hero-video src="assets/video/hero.mp4?v=20261111" poster="assets/img/hero.webp" muted loop playsinline autoplay preload="auto" aria-hidden="true" tabindex="-1"></video>
+        <div class="hero-shade" data-hero-shade></div>
+      </div>
+      <svg class="hero-frame" data-hero-frame viewBox="-6 -6 98.6 112" preserveAspectRatio="none" aria-hidden="true">
+        <path class="hf-o" pathLength="1" d="M43.3 -5.5 92.06 22.25v55.5L43.3 105.5-5.46 77.75v-55.5Z"/>
+        <path class="hf-i" pathLength="1" d="M43.3 0 86.6 25v50L43.3 100 0 75V25Z"/>
+      </svg>
+
+      <p class="hero-kicker" data-hero-fade>Peluquería y barbería<br>Dorrego 307 · Rosario</p>
+
+      <h1 class="hero-title" aria-label="Trapani Salon">
+        <span class="ht ht-1" data-hero-l1><span class="ht-in">Trapani</span></span>
+        <span class="ht ht-2" data-hero-l2><span class="ht-in"><em>Salon</em></span></span>
+      </h1>
+
+      <div class="hero-foot" data-hero-fade>
+        <p class="hero-sub">Color, corte y rituales de cuidado para mujer. Barbería para hombre.</p>
+        <p class="status" data-status role="status"><i aria-hidden="true"></i><span>Martes a sábado, de 10:00 a 19:00</span></p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener" data-magnetic>Reservar turno</a>
+          <a class="btn btn-line" href="https://wa.me/5493416151122" target="_blank" rel="noopener" data-magnetic>WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="hero-cue" data-hero-fade aria-hidden="true"><span>Deslizá</span><i></i></div>
+
+      <div class="hero-caption" data-hero-caption aria-hidden="true">
+        <p class="eyebrow">Dorrego 307 · Rosario</p>
+        <p class="hc-title">Color, corte y barbería.<br><em>De martes a sábado, de 10 a 19&nbsp;h.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CINTA ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" data-marquee>
+      <span>French Balayage</span><i></i><span><em>Color Majirel</em></span><i></i><span>INOA</span><i></i><span><em>Corte</em></span><i></i><span>Rituales Kérastase</span><i></i><span><em>Alisado</em></span><i></i><span>Barbería</span><i></i><span><em>Ritual Proraso</em></span><i></i>
+      <span>French Balayage</span><i></i><span><em>Color Majirel</em></span><i></i><span>INOA</span><i></i><span><em>Corte</em></span><i></i><span>Rituales Kérastase</span><i></i><span><em>Alisado</em></span><i></i><span>Barbería</span><i></i><span><em>Ritual Proraso</em></span><i></i>
+    </div>
+  </div>
+
+  <!-- ============ LA CASA ============ -->
+  <section class="manifesto" id="salon" aria-labelledby="t-salon" data-manifesto>
+    <div class="wrap">
+      <p class="eyebrow" data-reveal><span>01</span>La casa</p>
+      <h2 class="sr-only" id="t-salon">La casa</h2>
+      <p class="mf-text" data-words>Antes de cortar, miramos. La forma de tu cara, cómo se mueve tu pelo y cómo lo vas a llevar <em>todos los días.</em></p>
+      <div class="mf-grid">
+        <div class="mf-item" data-reveal>
+          <span class="mf-k">Lavado</span>
+          <p>Con productos Kérastase en los servicios de color, corte y tratamiento.</p>
+        </div>
+        <div class="mf-item" data-reveal>
+          <span class="mf-k">Color</span>
+          <p>Coloración Majirel e INOA de L’Oréal Professionnel, con cobertura de canas.</p>
+        </div>
+        <div class="mf-item" data-reveal>
+          <span class="mf-k">Barbería</span>
+          <p>Perfilado a navaja, toalla caliente y productos Proraso y Triumph &amp; Disaster.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRABAJOS ============ -->
+  <section class="works" id="trabajos" aria-labelledby="t-trabajos" data-works>
+    <div class="works-sticky">
+      <div class="works-intro" data-works-intro>
+        <p class="eyebrow" data-reveal><span>02</span>Trabajos</p>
+        <h2 class="title" id="t-trabajos"><span class="line" data-reveal><span>El resultado,</span></span><span class="line" data-reveal><span><em>en movimiento.</em></span></span></h2>
+        <p class="works-lead" data-reveal>Trabajos del salón en video. Tocá cualquiera para verlo en grande.</p>
+        <p class="pitch works-note" data-reveal>Videos de muestra. Se reemplazan por trabajos reales del salón.</p>
+      </div>
+
+      <ol class="works-track" data-works-track>
+        <li class="work">
+          <a class="work-card" href="assets/video/trabajo-01.mp4" data-work data-title="French Balayage" data-cat="Mujer">
+            <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-01.webp" data-src="assets/video/trabajo-01.mp4" aria-hidden="true"></video></span></span>
+            <span class="work-info"><span class="work-n">01</span><span class="work-cat">Mujer</span><span class="work-title">French Balayage</span></span>
+          </a>
+        </li>
+        <li class="work">
+          <a class="work-card" href="assets/video/trabajo-02.mp4" data-work data-title="Coloración" data-cat="Mujer">
+            <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-02.webp" data-src="assets/video/trabajo-02.mp4" aria-hidden="true"></video></span></span>
+            <span class="work-info"><span class="work-n">02</span><span class="work-cat">Mujer</span><span class="work-title">Coloración</span></span>
+          </a>
+        </li>
+        <li class="work">
+          <a class="work-card" href="assets/video/trabajo-03.mp4" data-work data-title="Corte de dama" data-cat="Mujer">
+            <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-03.webp" data-src="assets/video/trabajo-03.mp4" aria-hidden="true"></video></span></span>
+            <span class="work-info"><span class="work-n">03</span><span class="work-cat">Mujer</span><span class="work-title">Corte de dama</span></span>
+          </a>
+        </li>
+        <li class="work">
+          <a class="work-card" href="assets/video/trabajo-04.mp4" data-work data-title="Ondas" data-cat="Mujer">
+            <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-04.webp" data-src="assets/video/trabajo-04.mp4" aria-hidden="true"></video></span></span>
+            <span class="work-info"><span class="work-n">04</span><span class="work-cat">Mujer</span><span class="work-title">Ondas</span></span>
+          </a>
+        </li>
+        <li class="work">
+          <a class="work-card" href="assets/video/trabajo-05.mp4" data-work data-title="Ritual Kérastase" data-cat="Mujer">
+            <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-05.webp" data-src="assets/video/trabajo-05.mp4" aria-hidden="true"></video></span></span>
+            <span class="work-info"><span class="work-n">05</span><span class="work-cat">Mujer</span><span class="work-title">Ritual Kérastase</span></span>
+          </a>
+        </li>
+        <li class="work">
+          <a class="work-card" href="assets/video/trabajo-06.mp4" data-work data-title="Peinado fiesta" data-cat="Mujer">
+            <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-06.webp" data-src="assets/video/trabajo-06.mp4" aria-hidden="true"></video></span></span>
+            <span class="work-info"><span class="work-n">06</span><span class="work-cat">Mujer</span><span class="work-title">Peinado fiesta</span></span>
+          </a>
+        </li>
+        <li class="work">
+          <a class="work-card" href="assets/video/trabajo-07.mp4" data-work data-title="Corte de caballero" data-cat="Hombre">
+            <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-07.webp" data-src="assets/video/trabajo-07.mp4" aria-hidden="true"></video></span></span>
+            <span class="work-info"><span class="work-n">07</span><span class="work-cat">Hombre</span><span class="work-title">Corte de caballero</span></span>
+          </a>
+        </li>
+        <li class="work">
+          <a class="work-card" href="assets/video/trabajo-08.mp4" data-work data-title="Corte + barba" data-cat="Hombre">
+            <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-08.webp" data-src="assets/video/trabajo-08.mp4" aria-hidden="true"></video></span></span>
+            <span class="work-info"><span class="work-n">08</span><span class="work-cat">Hombre</span><span class="work-title">Corte <span class="plus">+</span> barba</span></span>
+          </a>
+        </li>
+        <li class="work">
+          <a class="work-card" href="assets/video/trabajo-09.mp4" data-work data-title="Barbería premium" data-cat="Hombre">
+            <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-09.webp" data-src="assets/video/trabajo-09.mp4" aria-hidden="true"></video></span></span>
+            <span class="work-info"><span class="work-n">09</span><span class="work-cat">Hombre</span><span class="work-title">Barbería premium</span></span>
+          </a>
+        </li>
+        <li class="work work--end">
+          <a class="work-end" href="https://instagram.com/trapanisalon" target="_blank" rel="noopener">
+            <svg class="mark" aria-hidden="true"><use href="#mark"/></svg>
+            <span class="we-k">Más trabajos</span>
+            <span class="we-t">@trapanisalon</span>
+            <span class="we-a">Ver en Instagram <svg aria-hidden="true"><use href="#arrow"/></svg></span>
+          </a>
+        </li>
+      </ol>
+
+      <div class="works-bar" aria-hidden="true">
+        <span class="wb-count"><b data-works-count>01</b> / 09</span>
+        <span class="wb-line"><i data-works-line></i></span>
+        <span class="wb-hint">Deslizá</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS ============ -->
+  <section class="services" id="servicios" aria-labelledby="t-servicios">
+    <div class="wrap">
+      <div class="svc-head">
+        <p class="eyebrow" data-reveal><span>03</span>Servicios</p>
+        <h2 class="title" id="t-servicios"><span class="line" data-reveal><span>Elegí tu</span></span><span class="line" data-reveal><span><em>servicio.</em></span></span></h2>
+        <p class="svc-lead" data-reveal>24 servicios con su duración estimada. Abrí cada uno para ver qué incluye y reservar.</p>
+      </div>
+
+      <div class="svc-tools" data-reveal>
+        <div class="seg" role="group" aria-label="Categoría" data-seg>
+          <button type="button" data-cat="mujer" aria-pressed="true">Mujer<sup>19</sup></button>
+          <button type="button" data-cat="hombre" aria-pressed="false">Hombre<sup>5</sup></button>
+          <span class="seg-ink" aria-hidden="true"></span>
+        </div>
+        <div class="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <label class="sr-only" for="q">Buscar un servicio</label>
+          <input id="q" type="search" placeholder="Buscar un servicio" autocomplete="off" data-search>
+        </div>
+      </div>
+      <p class="svc-note" data-note aria-live="polite" hidden></p>
+
+      <div class="svc-layout">
+        <aside class="svc-media" aria-hidden="true" data-svc-media>
+          <div class="svm-box">
+            <div class="svm-hex">
+              <video class="is-on" muted loop playsinline preload="none" poster="assets/img/trabajo-01.webp" data-svm="a"></video>
+              <video muted loop playsinline preload="none" data-svm="b"></video>
+            </div>
+            <svg class="svm-frame" viewBox="-6 -6 98.6 112" preserveAspectRatio="none">
+              <path d="M43.3 -5.5 92.06 22.25v55.5L43.3 105.5-5.46 77.75v-55.5Z"/>
+              <path d="M43.3 0 86.6 25v50L43.3 100 0 75V25Z"/>
+            </svg>
+          </div>
+          <p class="svm-cap"><span data-svm-cat>Mujer</span><b data-svm-name>Color <span class="plus">+</span> French Balayage</b><span data-svm-dur>4 h 10 min</span></p>
+        </aside>
+
+        <div class="svc-lists">
+          <!-- MUJER -->
+          <div class="svc-panel" data-panel="mujer" id="p-mujer">
+            <h3 class="svc-cat">Mujer</h3>
+
+            <h4 class="svc-group">Color</h4>
+            <ul class="svc-list">
+              <li><details class="svc" data-clip="01">
+                <summary><span class="svc-name">Color <span class="plus">+</span> French Balayage</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">4 h 10 min</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p>French Balayage + color completo. La combinación entre French Balayage y coloración Majirel, que te permite conseguir el efecto y tono que quieras. Con este servicio lográs un color personalizado y también podés cubrir canas si lo necesitás. El degradado puede ser sutil o intenso, según tu estilo y preferencia. Incluye lavado con productos Kérastase y peinado.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+              <li><details class="svc" data-clip="01">
+                <summary><span class="svc-name">French Balayage</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">3 h 30 min</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p>Incluye lavado Kérastase y peinado.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+              <li><details class="svc" data-clip="03">
+                <summary><span class="svc-name">Contornos</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">2 h</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p>Servicio para iluminar el contorno del rostro. Incluye lavado Kérastase y brushing.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+              <li><details class="svc" data-clip="01">
+                <summary><span class="svc-name">Total Blonde</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">4 h</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p class="svc-tag">Requiere preconfirmación del salón</p><p>Servicio de rubio total en la cabellera.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+              <li><details class="svc" data-clip="02">
+                <summary><span class="svc-name">Corrección de color</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">4 h</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p class="svc-tag">Requiere preconfirmación del salón</p><p>Si tu color quedó desigual, con marcas, barreras de color o fue aplicado incorrectamente, este servicio te ayuda a corregirlo con precisión. También trabajamos sobre French Balayages mal realizados, ajustando el degradado para que se vea natural y bien integrado con tu tono base. Incluye lavado con productos Kérastase y peinado.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+              <li><details class="svc" data-clip="02">
+                <summary><span class="svc-name">Servicio de color (Majirel)</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">1 h 30 min</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p>Coloración tradicional Majirel. Incluye lavado con productos Kérastase y peinado.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+              <li><details class="svc" data-clip="02">
+                <summary><span class="svc-name">Servicio de coloración INOA</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">1 h 30 min</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p>Coloración premium INOA. Incluye lavado con productos Kérastase y peinado.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+              <li><details class="svc" data-clip="01">
+                <summary><span class="svc-name">Shampoo color</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">1 h 30 min</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p>Shampoo color Diacolor de L’Oréal. Refresca el color entre servicios: ideal para mantener el French Balayage y el bronde, neutraliza tonos amarillentos y realza el brillo. Recomendado una vez al mes. Incluye peinado.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+              <li><details class="svc" data-clip="02">
+                <summary><span class="svc-name">Sh color mechas</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">10 min</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p class="svc-tag">Requiere preconfirmación del salón</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+            </ul>
+
+            <h4 class="svc-group">Corte y peinado</h4>
+            <ul class="svc-list">
+              <li><details class="svc" data-clip="03">
+                <summary><span class="svc-name">Corte de dama</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">1 h</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p>Un corte que se adapte a tu onda y a tu tipo de pelo, para que lo puedas manejar fácil todos los días. Primero vemos la forma de tu cara y cómo se mueve tu pelo, así encontramos el mejor corte para vos. Incluye lavado Kérastase y peinado.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+              <li><details class="svc" data-clip="03">
+                <summary><span class="svc-name">Corte de flequillo</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">15 min</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p>Servicio de corte de flequillo.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+              <li><details class="svc" data-clip="02">
+                <summary><span class="svc-name">Peinado brushing</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">45 min</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p class="svc-tag">Requiere preconfirmación del salón</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+              <li><details class="svc" data-clip="06">
+                <summary><span class="svc-name">Peinado fiesta</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">1 h</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p class="svc-tag">Requiere preconfirmación del salón</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+              <li><details class="svc" data-clip="04">
+                <summary><span class="svc-name">Ondas</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">1 h</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p class="svc-tag">Requiere preconfirmación del salón</p><p>Servicio de peinado con ondas.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+            </ul>
+
+            <h4 class="svc-group">Tratamientos</h4>
+            <ul class="svc-list">
+              <li><details class="svc" data-clip="05">
+                <summary><span class="svc-name">Ritual Premier de Kérastase</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">1 h</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p class="svc-tag">Requiere preconfirmación del salón</p><p>El ritual repara el 96% de los daños capilares desde la primera aplicación. El cabello queda más sano, brillante y con movimiento. Incluye peinado.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+              <li><details class="svc" data-clip="05">
+                <summary><span class="svc-name">Ritual Fusio-Dose Kérastase</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">1 h</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p>Tratamiento personalizado para todo tipo de cabello. Tras un diagnóstico previo, combinamos activos específicos en hasta 30 combinaciones posibles según lo que necesite tu pelo: hidratación, reparación o brillo. Incluye lavado con productos Kérastase y peinado.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+              <li><details class="svc" data-clip="05">
+                <summary><span class="svc-name">Protocolo Absolut Repair Molecular</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">1 h</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p>Tratamiento de L’Oréal Professionnel que repara hasta 2 años de daño capilar en un solo uso. Inyecta péptidos en la fibra capilar y reconstruye su estructura molecular. Para cabello dañado, con resultados visibles en 60 minutos.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+              <li><details class="svc" data-clip="04">
+                <summary><span class="svc-name">Servicio de alisado</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">2 h 50 min</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p class="svc-tag">Requiere preconfirmación del salón</p><p>Alisado sin formol ni amoníaco, apto para embarazadas, mujeres lactantes y niños. Usa células madre y deja el cabello liso y sin frizz durante tres meses. Contiene keratina, colágeno, argán y ácido hialurónico, protege contra los rayos UV y es apto para todo tipo de cabello.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+            </ul>
+
+            <h4 class="svc-group">Diagnóstico</h4>
+            <ul class="svc-list">
+              <li><details class="svc" data-clip="03">
+                <summary><span class="svc-name">Servicio de diagnóstico</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">15 min</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+            </ul>
+          </div>
+
+          <!-- HOMBRE -->
+          <div class="svc-panel" data-panel="hombre" id="p-hombre">
+            <h3 class="svc-cat">Hombre</h3>
+
+            <h4 class="svc-group">Barbería</h4>
+            <ul class="svc-list">
+              <li><details class="svc" data-clip="07">
+                <summary><span class="svc-name">Corte de caballero</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">30 min</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p>Incluye lavado y modelado con productos importados Triumph &amp; Disaster.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+              <li><details class="svc" data-clip="08">
+                <summary><span class="svc-name">Corte <span class="plus">+</span> barba</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">1 h</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p>Lavado, corte y moldeado, más recorte de barba y perfilado a navaja. Incluye toalla caliente.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+              <li><details class="svc" data-clip="09">
+                <summary><span class="svc-name">Servicio barbería premium</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">30 min</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p>Ritual Proraso: afeitado con productos italianos.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+            </ul>
+
+            <h4 class="svc-group">Color y alisado</h4>
+            <ul class="svc-list">
+              <li><details class="svc" data-clip="07">
+                <summary><span class="svc-name">Reflejos caballero</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">2 h</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p>Servicio de reflejos caballero.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+              <li><details class="svc" data-clip="07">
+                <summary><span class="svc-name">Alisado</span><span class="svc-dots" aria-hidden="true"></span><span class="svc-dur">1 h</span><span class="svc-ico" aria-hidden="true"></span></summary>
+                <div class="svc-body"><p>Alisado de amoníaco para cabello: lleva tu onda o rulo a lacio de forma permanente. Sin formol.</p><a class="btn btn-dark btn-sm" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar</a></div>
+              </details></li>
+            </ul>
+          </div>
+
+          <div class="policy" data-reveal>
+            <h3>Política de cancelación</h3>
+            <p>Las cancelaciones se realizan con 24 h de anticipación. De lo contrario, el cliente queda como incumplidor y se tiene en cuenta para el próximo turno.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RITUALES ============ -->
+  <section class="rituals" id="rituales" aria-labelledby="t-rituales">
+    <div class="wrap">
+      <div class="rit-head">
+        <p class="eyebrow" data-reveal><span>04</span>Rituales</p>
+        <h2 class="title" id="t-rituales"><span class="line" data-reveal><span>Rituales</span></span><span class="line" data-reveal><span><em>de cuidado.</em></span></span></h2>
+        <p class="rit-lead" data-reveal>Tratamientos de Kérastase y L’Oréal Professionnel. Los datos son de cada fabricante.</p>
+      </div>
+
+      <ol class="rit-list">
+        <li class="rit" data-reveal data-glow>
+          <p class="rit-num"><b data-count="96">96</b><span>%</span></p>
+          <div class="rit-txt">
+            <h3>Ritual Premier de Kérastase</h3>
+            <p>de los daños capilares reparados desde la primera aplicación. Incluye peinado.</p>
+          </div>
+          <span class="rit-dur">1 h</span>
+        </li>
+        <li class="rit" data-reveal data-glow>
+          <p class="rit-num"><b data-count="30">30</b></p>
+          <div class="rit-txt">
+            <h3>Ritual Fusio-Dose Kérastase</h3>
+            <p>combinaciones de activos posibles, elegidas tras un diagnóstico: hidratación, reparación o brillo.</p>
+          </div>
+          <span class="rit-dur">1 h</span>
+        </li>
+        <li class="rit" data-reveal data-glow>
+          <p class="rit-num"><b data-count="2">2</b><span>años</span></p>
+          <div class="rit-txt">
+            <h3>Protocolo Absolut Repair Molecular</h3>
+            <p>de daño capilar reparado en un solo uso, con resultados visibles en 60 minutos.</p>
+          </div>
+          <span class="rit-dur">1 h</span>
+        </li>
+        <li class="rit" data-reveal data-glow>
+          <p class="rit-num"><b data-count="3">3</b><span>meses</span></p>
+          <div class="rit-txt">
+            <h3>Servicio de alisado</h3>
+            <p>de pelo liso y sin frizz. Sin formol ni amoníaco, apto para embarazadas y niños.</p>
+          </div>
+          <span class="rit-dur">2 h 50 min</span>
+        </li>
+      </ol>
+
+      <div class="brands" data-reveal>
+        <p class="brands-k">Productos con los que trabajamos</p>
+        <ul class="brands-list">
+          <li>Kérastase</li><li>L’Oréal Professionnel</li><li>Majirel</li><li>INOA</li><li>Diacolor</li><li>Proraso</li><li>Triumph &amp; Disaster</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BARBERÍA ============ -->
+  <section class="barber" id="barberia" aria-labelledby="t-barberia" data-barber>
+    <div class="barber-media" data-barber-media>
+      <video muted loop playsinline preload="none" poster="assets/img/barberia.webp" data-src="assets/video/barberia.mp4" aria-hidden="true"></video>
+    </div>
+    <div class="wrap barber-in">
+      <div class="barber-copy">
+        <p class="eyebrow" data-reveal><span>05</span>Barbería</p>
+        <h2 class="title" id="t-barberia"><span class="line" data-reveal><span>Barbería,</span></span><span class="line" data-reveal><span><em>a navaja.</em></span></span></h2>
+        <ul class="barber-list">
+          <li data-reveal><span class="bl-n">Corte de caballero</span><span class="bl-d">Lavado, corte y modelado con Triumph &amp; Disaster.</span><span class="bl-t">30 min</span></li>
+          <li data-reveal><span class="bl-n">Corte <span class="plus">+</span> barba</span><span class="bl-d">Recorte de barba y perfilado a navaja, con toalla caliente.</span><span class="bl-t">1 h</span></li>
+          <li data-reveal><span class="bl-n">Barbería premium</span><span class="bl-d">Ritual Proraso: afeitado con productos italianos.</span><span class="bl-t">30 min</span></li>
+        </ul>
+        <a class="btn btn-gold" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener" data-reveal data-magnetic>Reservar en barbería</a>
+      </div>
+      <a class="barber-card" href="assets/video/trabajo-09.mp4" data-work data-title="Barbería premium" data-cat="Hombre" data-reveal>
+        <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-09.webp" data-src="assets/video/trabajo-09.mp4" aria-hidden="true"></video></span></span>
+        <span class="bc-cap">Ritual Proraso</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ RESERVA ============ -->
+  <section class="book" id="reservar" aria-labelledby="t-reservar">
+    <div class="wrap book-in">
+      <h2 class="book-title" id="t-reservar"><span class="line" data-reveal><span>Reservá</span></span><span class="line" data-reveal><span><em>tu turno.</em></span></span></h2>
+      <div class="book-side" data-reveal>
+        <p>Reservá online desde el sistema del salón o escribinos por WhatsApp.</p>
+        <div class="book-actions">
+          <a class="btn btn-dark" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener" data-magnetic>Reservar online</a>
+          <a class="btn btn-outline" href="https://wa.me/5493416151122" target="_blank" rel="noopener" data-magnetic>WhatsApp</a>
+        </div>
+        <p class="book-policy">Cancelaciones con 24 h de anticipación.</p>
+      </div>
+      <a class="seal" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener" aria-label="Reservar turno" data-magnetic>
+        <svg class="seal-ring" viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="sealpath" d="M100 100m-78 0a78 78 0 1 1 156 0a78 78 0 1 1-156 0"/></defs>
+          <text><textPath href="#sealpath">Reservar turno · Trapani Salon · Rosario · </textPath></text>
+        </svg>
+        <svg class="mark" aria-hidden="true"><use href="#mark"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="info" id="contacto" aria-labelledby="t-contacto">
+    <div class="wrap">
+      <p class="eyebrow" data-reveal><span>06</span>Contacto</p>
+      <h2 class="sr-only" id="t-contacto">Contacto y horario</h2>
+      <div class="info-grid">
+        <div class="info-col" data-reveal>
+          <h3>Horario</h3>
+          <ul class="hours" data-hours>
+            <li><span>Lunes</span><span>Cerrado</span></li>
+            <li><span>Martes</span><span>10:00 – 19:00</span></li>
+            <li><span>Miércoles</span><span>10:00 – 19:00</span></li>
+            <li><span>Jueves</span><span>10:00 – 19:00</span></li>
+            <li><span>Viernes</span><span>10:00 – 19:00</span></li>
+            <li><span>Sábado</span><span>10:00 – 19:00</span></li>
+            <li><span>Domingo</span><span>Cerrado</span></li>
+          </ul>
+          <p class="status status--ink" data-status><i aria-hidden="true"></i><span>Martes a sábado, de 10:00 a 19:00</span></p>
+        </div>
+        <div class="info-col" data-reveal>
+          <h3>Contacto</h3>
+          <ul class="contact">
+            <li><a href="https://wa.me/5493416151122" target="_blank" rel="noopener"><span>WhatsApp</span>+54 9 341 615-1122</a></li>
+            <li><a href="mailto:Comercial.trapanisalon@gmail.com"><span>Email</span>Comercial.trapanisalon@gmail.com</a></li>
+            <li><a href="https://instagram.com/trapanisalon" target="_blank" rel="noopener"><span>Instagram</span>@trapanisalon</a></li>
+            <li><a href="https://www.facebook.com/trapanisalon" target="_blank" rel="noopener"><span>Facebook</span>trapanisalon</a></li>
+          </ul>
+        </div>
+        <div class="info-col info-col--map" data-reveal>
+          <h3>Dirección</h3>
+          <address>Dorrego 307, 2000<br>Rosario, Santa Fe</address>
+          <div class="map">
+            <iframe title="Mapa: Dorrego 307, Rosario" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Dorrego+307,+Rosario,+Santa+Fe,+Argentina&amp;z=16&amp;output=embed"></iframe>
+          </div>
+          <a class="link-arrow" href="https://www.google.com/maps/search/?api=1&amp;query=Dorrego+307+Rosario+Argentina" target="_blank" rel="noopener">Cómo llegar <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot-word" aria-hidden="true">Trapani</p>
+    <div class="foot-row">
+      <a class="brand" href="#inicio" aria-label="Volver al inicio">
+        <svg class="mark" aria-hidden="true"><use href="#mark"/></svg>
+        <span class="wm"><b>Trapani</b><small>Salon</small></span>
+      </a>
+      <nav class="foot-nav" aria-label="Pie de página">
+        <a href="#trabajos">Trabajos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#rituales">Rituales</a>
+        <a href="#barberia">Barbería</a>
+        <a href="#contacto">Contacto</a>
+        <a href="https://web.bewe.co/trapani/login" target="_blank" rel="noopener">Iniciar sesión</a>
+      </nav>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 Trapani Salon · Dorrego 307, Rosario</span>
+      <span class="pitch">Propuesta de rediseño web por <span data-pitch-name>Álvaro</span></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Visor de trabajos -->
+<dialog class="lb" data-lb aria-label="Video del trabajo">
+  <div class="lb-in">
+    <div class="lb-stage"><video class="lb-video" data-lb-video controls playsinline loop></video></div>
+    <div class="lb-meta">
+      <p class="lb-cat" data-lb-cat></p>
+      <h3 class="lb-title" data-lb-title></h3>
+      <p class="lb-count"><span data-lb-n>01</span> / <span data-lb-t>09</span></p>
+      <div class="lb-nav">
+        <button type="button" class="lb-btn" data-lb-prev aria-label="Anterior"><svg style="transform:scaleX(-1)"><use href="#arrow"/></svg></button>
+        <button type="button" class="lb-btn" data-lb-next aria-label="Siguiente"><svg><use href="#arrow"/></svg></button>
+      </div>
+      <a class="btn btn-gold" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar este servicio</a>
+    </div>
+    <form method="dialog"><button class="lb-close" aria-label="Cerrar">×</button></form>
+  </div>
+</dialog>
+
+<!-- Distintivo de propuesta -->
+<button class="pitch badge" type="button" aria-haspopup="dialog" data-pitch-btn>
+  <svg class="mark" aria-hidden="true"><use href="#mark"/></svg>
+  <span><b>Propuesta de rediseño</b><small>Ver qué incluye</small></span>
+</button>
+<dialog class="pitch sheet" data-pitch-dlg aria-labelledby="pitch-t">
+  <form method="dialog"><button class="sheet-x" aria-label="Cerrar">×</button></form>
+  <h2 id="pitch-t">Propuesta de rediseño web para Trapani Salon</h2>
+  <p class="lead">Página nueva con la misma información que la actual, sin precios. La preparó <span data-pitch-name>Álvaro</span>.</p>
+  <h3>Qué incluye</h3>
+  <ul>
+    <li>Portada con video y el isotipo del salón como ventana.</li>
+    <li>Galería de trabajos en video, con visor a pantalla completa.</li>
+    <li>Los 24 servicios con duración, descripción y reserva.</li>
+    <li>Pestañas Mujer y Hombre, y buscador de servicios.</li>
+    <li>Cartel de abierto o cerrado según el horario del salón.</li>
+    <li>Reservas conectadas al sistema que ya usan.</li>
+    <li>Versión para celular.</li>
+  </ul>
+  <p class="sheet-note">Los videos son de muestra. Se reemplazan por trabajos del salón.</p>
+  <div class="sheet-row" data-pitch-row hidden>
+    <a class="btn btn-gold" data-pitch-cta href="#" target="_blank" rel="noopener">Quiero esta página</a>
+  </div>
+</dialog>
+
+<script defer src="lib/manifest.js?v=20261111"></script>
+<script defer src="main.js?v=20261111"></script>
+</body>
+</html>

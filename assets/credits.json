@@ -1,0 +1,17 @@
+{
+  "nota": "Videos provisionales para la propuesta. Reemplazar por trabajos reales del salón antes de publicar la web como definitiva.",
+  "fuente": "Mixkit (https://mixkit.co), licencia gratuita de Mixkit para uso comercial y personal.",
+  "videos": {
+    "hero.mp4": ["mixkit 49556", "mixkit 43232", "mixkit 45893", "mixkit 33257"],
+    "trabajo-01.mp4": "mixkit 49556",
+    "trabajo-02.mp4": "mixkit 45893",
+    "trabajo-03.mp4": "mixkit 33257",
+    "trabajo-04.mp4": "mixkit 16044",
+    "trabajo-05.mp4": "mixkit 33099",
+    "trabajo-06.mp4": "mixkit 40592",
+    "trabajo-07.mp4": "mixkit 43242",
+    "trabajo-08.mp4": "mixkit 43222",
+    "trabajo-09.mp4": "mixkit 40130",
+    "barberia.mp4": "mixkit 40120"
+  }
+}
