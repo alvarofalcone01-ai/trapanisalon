@@ -16,13 +16,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..500&family=Hanken+Grotesk:wght@400;500;600&display=swap">
 <link rel="preload" as="image" href="assets/img/hero.webp" fetchpriority="high">
-<link rel="stylesheet" href="styles.css?v=20261111">
+<link rel="stylesheet" href="styles.css?v=20261111b">
 <script>
 /* Marca que hay JS y respaldo: si main.js no arranca, se vuelve a la versión sin animaciones */
 (function(d){
   var h = d.documentElement;
   h.classList.remove("no-js"); h.classList.add("js");
-  try { if (sessionStorage.getItem("tp-splash")) h.classList.add("no-splash"); } catch (e) {}
   window.addEventListener("load", function(){
     setTimeout(function(){ if (!window.__tpBooted) { h.classList.remove("js"); h.classList.add("no-js"); } }, 1500);
   });
@@ -68,19 +67,9 @@
   <symbol id="play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5Z" fill="currentColor"/></symbol>
 </svg>
 
-<!-- Pantalla de entrada (se muestra una vez por visita) -->
-<div class="splash" data-splash aria-hidden="true">
-  <svg class="splash-mark" viewBox="0 0 100 100">
-    <path class="s-o" pathLength="1" d="M50 4 89.84 27v46L50 96 10.16 73V27Z"/>
-    <path class="s-i" pathLength="1" d="M50 9 85.51 29.5v41L50 91 14.49 70.5v-41Z"/>
-    <path class="s-t" d="M33 29h34v15h-5v-7H55.5v28H60v5H40v-5h4.5V37H38v7h-5Z"/>
-  </svg>
-  <p class="splash-word"><span>Trapani</span><span>Salon</span></p>
-</div>
 
 <div class="progress" aria-hidden="true"><span data-progress></span></div>
 <div class="grain" aria-hidden="true"></div>
-<div class="cursor" aria-hidden="true"><span class="cursor-dot"></span><span class="cursor-ring"><svg><use href="#play"/></svg></span></div>
 
 <header class="nav" data-nav>
   <div class="nav-in">
@@ -124,7 +113,7 @@
   <section class="hero" id="inicio" aria-label="Portada" data-hero>
     <div class="hero-sticky">
       <div class="hero-media" data-hero-media>
-        <video class="hero-video" data-hero-video src="assets/video/hero.mp4?v=20261111" poster="assets/img/hero.webp" muted loop playsinline autoplay preload="auto" aria-hidden="true" tabindex="-1"></video>
+        <video class="hero-video" data-hero-video src="assets/video/hero.mp4?v=20261111b" poster="assets/img/hero.webp" muted loop playsinline autoplay preload="auto" aria-hidden="true" tabindex="-1"></video>
         <div class="hero-shade" data-hero-shade></div>
       </div>
       <svg class="hero-frame" data-hero-frame viewBox="-6 -6 98.6 112" preserveAspectRatio="none" aria-hidden="true">
@@ -203,54 +192,63 @@
           <a class="work-card" href="assets/video/trabajo-01.mp4" data-work data-title="French Balayage" data-cat="Mujer">
             <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-01.webp" data-src="assets/video/trabajo-01.mp4" aria-hidden="true"></video></span></span>
             <span class="work-info"><span class="work-n">01</span><span class="work-cat">Mujer</span><span class="work-title">French Balayage</span></span>
+            <span class="work-play" aria-hidden="true"><svg><use href="#play"/></svg></span>
           </a>
         </li>
         <li class="work">
           <a class="work-card" href="assets/video/trabajo-02.mp4" data-work data-title="Coloración" data-cat="Mujer">
             <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-02.webp" data-src="assets/video/trabajo-02.mp4" aria-hidden="true"></video></span></span>
             <span class="work-info"><span class="work-n">02</span><span class="work-cat">Mujer</span><span class="work-title">Coloración</span></span>
+            <span class="work-play" aria-hidden="true"><svg><use href="#play"/></svg></span>
           </a>
         </li>
         <li class="work">
           <a class="work-card" href="assets/video/trabajo-03.mp4" data-work data-title="Corte de dama" data-cat="Mujer">
             <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-03.webp" data-src="assets/video/trabajo-03.mp4" aria-hidden="true"></video></span></span>
             <span class="work-info"><span class="work-n">03</span><span class="work-cat">Mujer</span><span class="work-title">Corte de dama</span></span>
+            <span class="work-play" aria-hidden="true"><svg><use href="#play"/></svg></span>
           </a>
         </li>
         <li class="work">
           <a class="work-card" href="assets/video/trabajo-04.mp4" data-work data-title="Ondas" data-cat="Mujer">
             <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-04.webp" data-src="assets/video/trabajo-04.mp4" aria-hidden="true"></video></span></span>
             <span class="work-info"><span class="work-n">04</span><span class="work-cat">Mujer</span><span class="work-title">Ondas</span></span>
+            <span class="work-play" aria-hidden="true"><svg><use href="#play"/></svg></span>
           </a>
         </li>
         <li class="work">
           <a class="work-card" href="assets/video/trabajo-05.mp4" data-work data-title="Ritual Kérastase" data-cat="Mujer">
             <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-05.webp" data-src="assets/video/trabajo-05.mp4" aria-hidden="true"></video></span></span>
             <span class="work-info"><span class="work-n">05</span><span class="work-cat">Mujer</span><span class="work-title">Ritual Kérastase</span></span>
+            <span class="work-play" aria-hidden="true"><svg><use href="#play"/></svg></span>
           </a>
         </li>
         <li class="work">
           <a class="work-card" href="assets/video/trabajo-06.mp4" data-work data-title="Peinado fiesta" data-cat="Mujer">
             <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-06.webp" data-src="assets/video/trabajo-06.mp4" aria-hidden="true"></video></span></span>
             <span class="work-info"><span class="work-n">06</span><span class="work-cat">Mujer</span><span class="work-title">Peinado fiesta</span></span>
+            <span class="work-play" aria-hidden="true"><svg><use href="#play"/></svg></span>
           </a>
         </li>
         <li class="work">
           <a class="work-card" href="assets/video/trabajo-07.mp4" data-work data-title="Corte de caballero" data-cat="Hombre">
             <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-07.webp" data-src="assets/video/trabajo-07.mp4" aria-hidden="true"></video></span></span>
             <span class="work-info"><span class="work-n">07</span><span class="work-cat">Hombre</span><span class="work-title">Corte de caballero</span></span>
+            <span class="work-play" aria-hidden="true"><svg><use href="#play"/></svg></span>
           </a>
         </li>
         <li class="work">
           <a class="work-card" href="assets/video/trabajo-08.mp4" data-work data-title="Corte + barba" data-cat="Hombre">
             <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-08.webp" data-src="assets/video/trabajo-08.mp4" aria-hidden="true"></video></span></span>
             <span class="work-info"><span class="work-n">08</span><span class="work-cat">Hombre</span><span class="work-title">Corte <span class="plus">+</span> barba</span></span>
+            <span class="work-play" aria-hidden="true"><svg><use href="#play"/></svg></span>
           </a>
         </li>
         <li class="work">
           <a class="work-card" href="assets/video/trabajo-09.mp4" data-work data-title="Barbería premium" data-cat="Hombre">
             <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-09.webp" data-src="assets/video/trabajo-09.mp4" aria-hidden="true"></video></span></span>
             <span class="work-info"><span class="work-n">09</span><span class="work-cat">Hombre</span><span class="work-title">Barbería premium</span></span>
+            <span class="work-play" aria-hidden="true"><svg><use href="#play"/></svg></span>
           </a>
         </li>
         <li class="work work--end">
@@ -521,6 +519,7 @@
       <a class="barber-card" href="assets/video/trabajo-09.mp4" data-work data-title="Barbería premium" data-cat="Hombre" data-reveal>
         <span class="work-frame"><span class="work-media"><video muted loop playsinline preload="none" poster="assets/img/trabajo-09.webp" data-src="assets/video/trabajo-09.mp4" aria-hidden="true"></video></span></span>
         <span class="bc-cap">Ritual Proraso</span>
+        <span class="work-play" aria-hidden="true"><svg><use href="#play"/></svg></span>
       </a>
     </div>
   </section>
@@ -613,22 +612,22 @@
   </div>
 </footer>
 
-<!-- Visor de trabajos -->
-<dialog class="lb" data-lb aria-label="Video del trabajo">
-  <div class="lb-in">
-    <div class="lb-stage"><video class="lb-video" data-lb-video controls playsinline loop></video></div>
-    <div class="lb-meta">
-      <p class="lb-cat" data-lb-cat></p>
-      <h3 class="lb-title" data-lb-title></h3>
-      <p class="lb-count"><span data-lb-n>01</span> / <span data-lb-t>09</span></p>
-      <div class="lb-nav">
-        <button type="button" class="lb-btn" data-lb-prev aria-label="Anterior"><svg style="transform:scaleX(-1)"><use href="#arrow"/></svg></button>
-        <button type="button" class="lb-btn" data-lb-next aria-label="Siguiente"><svg><use href="#arrow"/></svg></button>
-      </div>
-      <a class="btn btn-gold" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar este servicio</a>
+<!-- Visor de trabajos: deslizar para cambiar, arrastrar hacia abajo para cerrar -->
+<dialog class="lb" data-lb aria-label="Visor de trabajos">
+  <div class="lb-scrim" data-lb-scrim></div>
+  <div class="lb-stage" data-lb-stage><div class="lb-strip" data-lb-strip></div></div>
+  <div class="lb-meta" data-lb-meta>
+    <p class="lb-cat" data-lb-cat></p>
+    <h3 class="lb-title" data-lb-title aria-live="polite"></h3>
+    <p class="lb-count"><span data-lb-n>01</span> / <span data-lb-t>09</span></p>
+    <div class="lb-nav">
+      <button type="button" class="lb-btn" data-lb-prev aria-label="Anterior"><svg style="transform:scaleX(-1)"><use href="#arrow"/></svg></button>
+      <button type="button" class="lb-btn" data-lb-next aria-label="Siguiente"><svg><use href="#arrow"/></svg></button>
     </div>
-    <form method="dialog"><button class="lb-close" aria-label="Cerrar">×</button></form>
+    <a class="btn btn-gold" href="https://web.bewe.co/trapani/services" target="_blank" rel="noopener">Reservar este servicio</a>
+    <p class="lb-hint">Deslizá para cambiar de video. Arrastrá hacia abajo para cerrar.</p>
   </div>
+  <button type="button" class="lb-close" data-lb-close aria-label="Cerrar">×</button>
 </dialog>
 
 <!-- Distintivo de propuesta -->
@@ -656,7 +655,7 @@
   </div>
 </dialog>
 
-<script defer src="lib/manifest.js?v=20261111"></script>
-<script defer src="main.js?v=20261111"></script>
+<script defer src="lib/manifest.js?v=20261111b"></script>
+<script defer src="main.js?v=20261111b"></script>
 </body>
 </html>
